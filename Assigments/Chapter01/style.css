@@ -1,0 +1,19 @@
+body{
+   margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+}
+.alert {
+   background-color: aqua; 
+   font-size: 40px;
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+   height: 200px;
+   width: 200px;
+  
+   
+   
+}
