@@ -92,6 +92,19 @@ for (var i = 1 ; i <= 20 ; i++){
 
     /* Task No.07 */
 document.writeln(`<h3> Task No.7  </h3>`) 
+var matchFound = false;
+A = ["cake", "apple pie", "cookie" , "chips", "patties"]
+var order = prompt("Welcome to ABC Bakery.What do you want to order sir/mamam?").toLowerCase()
+for (var i = 0; i < A.length; i++) {
+    if (order === A[i]) {
+        matchFound = True;
+        document.writeln(`${order} is available at index ${i} in our bakery`)
+        break;
+    }    
+}
+if (matchFound === false) {
+ document.writeln(`We are sorry. ${order} is not available in our bakery`);
+ }
 
 
   /* Task No.08 */
