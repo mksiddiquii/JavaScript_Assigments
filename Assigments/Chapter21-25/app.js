@@ -4,18 +4,18 @@ document.writeln(`<h1> Chapter 17 to 20 Assigments</h1>`)
 document.writeln(`<h3> Task No.1 </h3>`)
 
 
-/* first_name = prompt("what is you First name?");
+first_name = prompt("what is you First name?");
 last_name = prompt("what is you Last name?");
 full_name = first_name +" "+ last_name ;
-document.writeln("welcome the coding world Mr."+full_name) */
+document.writeln("welcome the coding world Mr."+full_name)
 
 /* Task No.02 */
 
 document.writeln(`<h3> Task No.2 </h3>`)
 
-/* var fav_phone = prompt("What is your favorite mobile phone model:")
+var fav_phone = prompt("What is your favorite mobile phone model:")
 document.writeln("My Favorite phone is : " + fav_phone ,"<br>")
-document.writeln("length of String is:"+fav_phone.length) */
+document.writeln("length of String is:"+fav_phone.length)
 
 /* Task No.03 */
 
@@ -48,12 +48,12 @@ console.log(country);
 
 document.writeln(`<h3> Task No.6 </h3>`)
 
-/* first_name = prompt("what is you First name?");
+first_name = prompt("what is you First name?");
 last_name = prompt("what is you Last name?");
 full_name = first_name.concat(last_name) 
 document.writeln("welcome the coding world Mr."+full_name) */
 
-/* Task No.07 */
+/* Task No.07
 
 document.writeln(`<h3> Task No.7 </h3>`)
 
@@ -85,18 +85,18 @@ document.writeln("Typeof  " + typeof(num1))
 
 document.writeln(`<h3> Task No.10 </h3>`)
 
-/* var city_name = prompt("Enter Your city name")
+var city_name = prompt("Enter Your city name")
 document.writeln("User Input:  "+ city_name ,"<br>")
-document.writeln("Upper Case:  "+ city_name.toUpperCase()) */
+document.writeln("Upper Case:  "+ city_name.toUpperCase())
 
 
 /* Task No.11 */
 
 document.writeln(`<h3> Task No.11 </h3>`)
 
-/* var lang = prompt("Enter Your favorite programming language ")
+var lang = prompt("Enter Your favorite programming language ")
 document.writeln("User Input:  "+ lang ,"<br>")
-document.writeln("Title Case:  "+ lang.charAt(0).toUpperCase() + lang.slice(1).toLowerCase()) */
+document.writeln("Title Case:  "+ lang.charAt(0).toUpperCase() + lang.slice(1).toLowerCase())
 
 
 /* Task No.12 */
@@ -116,7 +116,7 @@ document.writeln(`<h3> Task No.13 </h3>`)
 
 document.writeln(`<h3> Task No.14 </h3>`)
 
-/* var matchFound = false;
+var matchFound = false;
  var A = ["cake", "apple pie", "cookie" , "chips", "patties"]
 var order = prompt("Welcome to ABC Bakery.What do you want to order sir/mamam?").toLowerCase()
 for (var i = 0; i < A.length; i++) {
@@ -128,4 +128,4 @@ for (var i = 0; i < A.length; i++) {
 }
 if (matchFound === false) {
  document.writeln(`We are sorry. ${order} is not available in our bakery`);
- } */
+ }
