@@ -74,6 +74,12 @@ document.writeln(`Your Weight is  : ${num3}KGs <br>`,) */
 document.writeln(`<h3> Task No.8 </h3>`)
 
 
-var coin = Math.floor(Math.random() * 10)+1 
+var num4 = Math.floor(Math.random() * 10)+1 
+var guess  = parseInt(prompt("Enter your number"))
+if (num4 === guess ) {
+    document.writeln(`Conratulation you guess the right Number`)
+} else {
+    document.writeln(`Try Again`)
+}
 
 
