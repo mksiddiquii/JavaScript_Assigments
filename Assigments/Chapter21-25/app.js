@@ -1,4 +1,4 @@
-document.writeln(`<h1> Chapter 17 to 20 Assigments</h1>`)
+document.writeln(`<h1> Chapter 21 to 25 Assigments</h1>`)
  /* Task No.01 */
 
 document.writeln(`<h3> Task No.1 </h3>`)
