@@ -8,15 +8,37 @@ function clearAll() {
     input.value = '';
 }
 function calculate() {
-    var expression = input.value;
-        expression = expression.replace(Math.sin)
-                               .replace(Math.cos)
-                               .replace(Math.tan)
-                               .replace(Math.log10) 
-                               .replace(Math.log)    
-                               .replace(Math.sqrt)
-                               .replace(Math.E);
-
-        input.value = eval(expression);
+    input.value = eval(input.value);
+}
+function sin() {
+    input.value = Math.sin(input.value)
     
-    }
+}
+function cos() {
+    input.value = Math.cos(input.value)
+    
+}
+function tan() {
+    input.value = Math.tan(input.value)
+    
+}
+function log() {
+    input.value = Math.log(input.value)
+    
+}
+function ln() {
+    input.value = Math.ln(input.value)
+    
+}
+function e() {
+    input.value = 2.71828182846
+    
+}
+function pow() {
+    input.value =Math.pow(input.value,2)
+    
+}
+function pow1(y) {
+    input.value =Math.pow(input.value,y)
+    
+}
