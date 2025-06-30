@@ -8,5 +8,15 @@ function clearAll() {
     input.value = '';
 }
 function calculate() {
-    input.value = eval(input.value);
-}
+    var expression = input.value;
+        expression = expression.replace(Math.sin)
+                               .replace(Math.cos)
+                               .replace(Math.tan)
+                               .replace(Math.log10) 
+                               .replace(Math.log)    
+                               .replace(Math.sqrt)
+                               .replace(Math.E);
+
+        input.value = eval(expression);
+    
+    }
