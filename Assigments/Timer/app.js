@@ -4,25 +4,30 @@ var msec = document.getElementById("msec");
 var start = document.getElementById("start");
 var pause = document.getElementById("pause");
 var reset = document.getElementById("reset");
+var user_input =document.getElementById("userinput")
 
-var minute = 0;
-var second = 0;
+var minute = 1*user_input.value
+var second = minute*60;
 var millisecond = 0;
 var interval;
 
 function timer() {
-  millisecond++;
+  millisecond--;
   msec.innerHTML = millisecond;
-  if (millisecond == 99) {
+  if (millisecond == -99) {
     millisecond = 0;
-    second++;
+    second--;
     sec.innerHTML = second;
   }
-  if (second == 59) {
-    minute++;
+  if (second == -59) {
+    minute--;
     second = 0;
     millisecond = 0;
     min.innerHTML = minute;
+  }
+
+  if(second===0){
+    pausetimer()
   }
 }
 
@@ -42,12 +47,11 @@ function pausetimer() {
 
 function resettimer() {
   pausetimer();
-  minute = 0;
-  second = 0;
-  millisecond = 0;
-  min.innerText = minute;
-  sec.innerText = second;
-  msec.innerText = millisecond;
+
+  min.innerText = "00"
+  sec.innerText = "00"
+  msec.innerText = "00"
+  user_input.value= ""
   start.disabled = false;
   pause.disabled = true;
   reset.disabled = true;

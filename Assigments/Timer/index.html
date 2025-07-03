@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STOP WATCh</title>
+    <title>Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>STOP WATCH <img src="./images.jpeg" alt="" srcset="" style="height: 60px;width:60px;background: hsl(0, 8%, 88%)"></h1>
 <div class="stopwatch">
-<div >MINUTES:<span id="min">00</span></div>
-<div >SECONDS:<span id="sec">00</span></div>
-<div >MILLISECONDS:<span id="msec">00</span></div>
+    <input id="userinput" onclick="resettimer()" type="number" placeholder="Enter time in minutes">
+<div><span id="min">00 </span>
+<span id="sec">00 </span>
+<span id="msec">00</span></div>
 </div>
 <div>
     <button onclick="starttimer()" id="start"class="btn">Start</button>
